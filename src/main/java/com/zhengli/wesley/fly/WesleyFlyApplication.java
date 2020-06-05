@@ -9,6 +9,7 @@ public class WesleyFlyApplication {
 	public static void main(String[] args) {
 
 		SpringApplication.run(WesleyFlyApplication.class, args);
+		System.out.println("args = [" + args + "]");
 	}
 
 }
