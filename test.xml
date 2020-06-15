@@ -1,0 +1,59 @@
+<profiles>
+
+    <profile>
+        <id>nexus</id>
+        <repositories>
+            <repository>
+                <id>releases</id>
+                <url>http://localhost:8081/repository/maven-releases</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+            <repository>
+                <id>snapshots</id>
+                <url>http://localhost:8081/repository/maven-snapshots/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </repository>
+        </repositories>
+        <pluginRepositories>
+            <pluginRepository>
+                <id>releases</id>
+                <url>http://localhost:8081/repository/maven-releases</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </pluginRepository>
+            <pluginRepository>
+                <id>snapshots</id>
+                <url>http://localhost:8081/repository/maven-snapshots/</url>
+                <releases>
+                    <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                    <enabled>true</enabled>
+                </snapshots>
+            </pluginRepository>
+        </pluginRepositories>
+    </profile>
+</profiles>
+<activeProfiles>
+    <activeProfile>nexus</activeProfile>
+</activeProfiles>
+
+<mirror>
+    <id>nexus-releases</id>
+    <mirrorOf>*</mirrorOf>
+    <url>http://localhost:8081/repository/maven-public</url>
+</mirror>
