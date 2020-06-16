@@ -12,7 +12,7 @@
 	</parent>
 	<groupId>com.zhengli</groupId>
 	<artifactId>wesley-fly</artifactId>
-	<version>0.0.2-RELEASE</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>wesley-fly</name>
 	<description>Demo project for Spring Boot</description>
 
